@@ -3,173 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bangladesh Service</title>
+<title>বাংলাদেশ সার্ভিস - নতুন অ্যাপ ২০২৬</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Hind Siliguri,Arial,sans-serif}
-body{background:#eef2ff;padding-bottom:80px}
-.top{background:linear-gradient(90deg,#3b82f6,#0ea5e9);color:white;padding:14px;display:flex;justify-content:space-between;align-items:center}
-.top b{font-size:19px}
-.search{margin:12px;background:white;border-radius:30px;padding:12px 15px;display:flex;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-.search input{border:none;outline:none;width:100%;font-size:16px}
-.head{margin:0 12px;display:flex;justify-content:space-between;align-items:center}
-.head h3{font-size:18px}.head b{color:#2563eb;font-size:22px}
-.emg{display:flex;gap:10px;margin:12px}
-.emg div{flex:1;text-align:center;padding:12px;border-radius:12px;font-weight:bold;font-size:16px;background:white}
-.e1{border:2px solid #ef4444;color:#dc2626}
-.e2{border:2px solid #f59e0b;color:#d97706}
-.loc{background:#dbeafe;margin:12px;padding:12px;border-radius:12px;text-align:center;color:#1d4ed8;font-weight:bold}
-.notice{margin:12px;background:white;border:2px solid #fca5a5;border-radius:15px;padding:14px}
-.notice2{margin:12px;background:white;border:2px solid #fbbf24;border-radius:15px;padding:14px}
-.notice h3,.notice2 h3{display:flex;justify-content:space-between}
-.badge{background:#dc2626;color:white;font-size:13px;padding:3px 9px;border-radius:20px}
-.badge2{background:#f59e0b;color:white;font-size:13px;padding:3px 9px;border-radius:20px}
-.notice p,.notice2 p{color:#666;margin:8px 0;font-size:14px}
-h2{margin:18px 12px 5px;font-size:19px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
-.card{background:white;border-radius:15px;padding:18px 8px;text-align:center;position:relative;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.card b{display:block;font-size:28px;margin-bottom:6px}
-.card i{position:absolute;top:8px;right:8px;background:#2563eb;color:white;font-style:normal;font-size:12px;padding:2px 8px;border-radius:20px}
-.card small{font-size:12px;color:#666}
-.addbtn{display:block;background:#16a34a;color:white;text-align:center;margin:12px;padding:16px;border-radius:50px;text-decoration:none;font-size:20px;font-weight:bold}
-.bottom{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;justify-content:space-around;padding:10px 0;border-top:1px solid #ddd}
-.bottom div{text-align:center;font-size:14px;color:#666}
-.bottom div.active{color:#2563eb;font-weight:bold}
+body{background:#f0fdf4;color:#111;text-align:center}
+.header{background:#16a34a;color:white;padding:25px 15px;border-radius:0 0 25px 25px}
+.header h1{font-size:32px}
+.header p{margin-top:8px;font-size:18px}
+.banner{background:#dc2626;color:white;margin:15px;padding:15px;border-radius:15px;font-size:20px;font-weight:bold;line-height:1.5}
+.banner span{font-size:28px}
+.btn{display:block;background:#16a34a;color:white;font-size:26px;font-weight:bold;padding:18px;margin:15px;border-radius:50px;text-decoration:none;box-shadow:0 5px 15px rgba(0,0,0,0.2)}
+.btn small{display:block;font-size:15px;font-weight:normal;margin-top:5px}
+.info{background:white;margin:15px;padding:15px;border-radius:15px;border:2px solid #bbf7d0;text-align:left}
+.info h3{color:#16a34a;margin-bottom:8px}
+.info p{font-size:17px;line-height:1.7}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px}
+.card{background:white;padding:18px 10px;border-radius:15px;font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.card b{display:block;font-size:28px;margin-bottom:5px}
+.section{background:white;margin:15px;padding:15px;border-radius:15px;text-align:left}
+.section h3{color:#16a34a;margin-bottom:10px}
+.section p{font-size:16px;line-height:1.8}
+.footer{padding:20px;font-size:14px;color:#666}
 </style>
 </head>
 <body>
 
-<div class="top"><b>🅱️ Bangladesh Service</b><div>🔔 1 &nbsp; 👤 S</div></div>
-<div class="search">🔍 <input id="s" onkeyup="f()" placeholder="সেবা খুঁজুন - ড্রাইভার, ডাক্তার, ইমাম..."></div>
-<div class="head"><div><h3>Bangladesh Service</h3><small>কাছের লোক, বিশ্বস্ত সেবা</small></div><div style="text-align:right"><b>35 জন</b><br><small>সক্রিয়</small></div></div>
-<div class="emg"><div class="e1">🚨 জরুরি - ৯৯৯</div><div class="e2">🔥 ফায়ার - ১০২</div></div>
-<div class="loc">📍 আমার কাছের লোক দেখুন - লোকেশন ON করুন</div>
-
-<div class="notice"><h3>📢 টিকা নোটিশ <span class="badge">0 টা নোটিশ</span></h3><p>এখনো কোনো টিকা নোটিশ আসে নাই।</p></div>
-<div class="notice2"><h3>🚨 হারানো / চুরি নোটিশ <span class="badge2">0 টা নোটিশ</span></h3><p>এখনো কোনো হারানো নোটিশ আসে নাই।</p></div>
-
-<a class="addbtn" href="https://wa.me/8801606582282?text=আমি%20সেবাদাতা%20হতে%20চাই">➕ সেবাদাতা হিসাবে এড হন - ফ্রি</a>
-
-<h2>🚗 গাড়ি ও যাতায়াত</h2>
-<div class="grid">
-<div class="card"><i>0</i><b>🚗</b>ড্রাইভার</div>
-<div class="card"><i>3</i><b>🛺</b>অটো<br><small>ব্যাটারির টমটম</small></div>
-<div class="card"><i>21</i><b>🚕</b>সিএনজি</div>
-<div class="card"><i>1</i><b>🚚</b>পিকআপ</div>
-<div class="card"><i>0</i><b>🚌</b>বাস</div>
-<div class="card"><i>0</i><b>🚛</b>ট্রাক</div>
-<div class="card"><i>0</i><b>🏍️</b>বাইক</div>
-<div class="card"><i>0</i><b>📶</b>ওয়াইফাই কল</div>
-<div class="card"><i>0</i><b>🚙</b>গাড়ি ভাড়া</div>
-<div class="card"><i>0</i><b>📦</b>কুরিয়ার</div>
-<div class="card"><i>0</i><b>🚘</b>কার ড্রাইভিং শিখুন</div>
-<div class="card"><i>0</i><b>🛵</b>বাইক ড্রাইভিং শিখুন</div>
+<div class="header">
+  <h1>🇧🇩 বাংলাদেশ সার্ভিস</h1>
+  <p>নতুন অ্যাপ ২০২৬ - কাছের লোক, বিশ্বস্ত সেবা</p>
 </div>
 
-<h2>🩺 স্বাস্থ্য</h2>
-<div class="grid">
-<div class="card"><i>0</i><b>🚑</b>অ্যাম্বুলেন্স</div>
-<div class="card"><i>0</i><b>🩺</b>ডাক্তার</div>
-<div class="card"><i>0</i><b>👩‍⚕️</b>নার্স</div>
-<div class="card"><i>3</i><b>💊</b>ফার্মেসি</div>
-<div class="card"><i>0</i><b>🏥</b>হাসপাতাল</div>
-<div class="card"><i>0</i><b>🩸</b>রক্তদাতা</div>
-<div class="card"><i>0</i><b>🔬</b>ল্যাব</div>
-<div class="card"><i>0</i><b>🐾</b>পশুর ডাক্তার</div>
+<div class="banner">
+  তাড়াতাড়ি এড হন - এখন ফ্রি!<br>
+  <span>১০০০ জন সেবাদাতা হয়ে গেলেই<br>ফর্ম পূরণ করতে ১৫০ টাকা লাগবে</span>
 </div>
 
-<h2>🕌 ধর্মীয় সেবা</h2>
-<div class="grid">
-<div class="card"><i>0</i><b>🕌</b>ইমাম</div>
-<div class="card"><i>0</i><b>🕌</b>মুয়াজ্জিন</div>
-<div class="card"><i>0</i><b>🎙️</b>বক্তা</div>
-<div class="card"><i>0</i><b>🕌</b>খতিব</div>
-<div class="card"><i>0</i><b>📜</b>মুফতি</div>
-<div class="card"><i>0</i><b>📖</b>কারী</div>
-<div class="card"><i>0</i><b>📗</b>হাফেজ</div>
-<div class="card"><i>0</i><b>📚</b>নুরানী শিক্ষক</div>
-<div class="card"><i>0</i><b>📖</b>কুরআন শিক্ষক</div>
-<div class="card"><i>0</i><b>📖</b>কুরআন খতম</div>
-<div class="card"><i>0</i><b>🕌</b>লজিং হুজুর</div>
-<div class="card"><i>0</i><b>✈️</b>হজ্জ গাইড</div>
+<a class="btn" href="https://wa.me/8801606582282?text=আমি%20সেবাদাতা%20হতে%20চাই">
+  📞 নাম্বার এড করুন
+  <small>টিপ দিলেই WhatsApp খুলবে</small>
+</a>
+
+<div class="info">
+  <h3>✅ জিমেইল দিয়ে অটো লগইন - খুব সহজ</h3>
+  <p>
+    • কোনো পাসওয়ার্ড লাগবে না<br>
+    • ১ মিনিটেই লগইন হয়ে যাবে<br>
+    • সেবাদাতারা ফরম পূরণ করতে জিমেইল দিয়ে অটো লগইন করবেন
+  </p>
 </div>
 
-<h2>🔧 মিস্ত্রি ও কর্মী</h2>
-<div class="grid">
-<div class="card"><i>1</i><b>💡</b>ইলেকট্রিশিয়ান</div>
-<div class="card"><i>1</i><b>🚿</b>প্লাম্বার</div>
-<div class="card"><i>1</i><b>🧱</b>রাজমিস্ত্রি</div>
-<div class="card"><i>1</i><b>🎨</b>রং মিস্ত্রি</div>
-<div class="card"><i>1</i><b>🪚</b>কাঠমিস্ত্রি</div>
-<div class="card"><i>0</i><b>🔧</b>ওয়েল্ডার</div>
-<div class="card"><i>0</i><b>⚙️</b>মেকানিক</div>
-<div class="card"><i>0</i><b>👷</b>কর্মী / শ্রমিক</div>
-<div class="card"><i>0</i><b>🧹</b>কাজের বুয়া</div>
-<div class="card"><i>0</i><b>💂</b>গার্ড</div>
-<div class="card"><i>0</i><b>⛏️</b>মাটি কাটা / পুকুর খনন</div>
+<div class="section">
+  <h3>📋 সেবা সমূহ - ডেমো হিসাবে দেখে নিন</h3>
+  <p>অ্যাপ চালু হইলে এখান থেকে সব সেবা পাওয়া যাইবো</p>
 </div>
 
-<h2>✂️ অন্যান্য সেবা</h2>
 <div class="grid">
-<div class="card"><i>0</i><b>✂️</b>দর্জি</div>
-<div class="card"><i>0</i><b>💈</b>নাপিত</div>
-<div class="card"><i>0</i><b>🍳</b>বাবুর্চি</div>
-<div class="card"><i>0</i><b>👨‍🏫</b>শিক্ষক</div>
-<div class="card"><i>0</i><b>📚</b>প্রাইভেট টিউটর</div>
-<div class="card"><i>0</i><b>🏏</b>কোচ</div>
-<div class="card"><i>0</i><b>⚖️</b>উকিল</div>
-<div class="card"><i>0</i><b>📷</b>ফটোগ্রাফার</div>
-<div class="card"><i>0</i><b>🎉</b>ডেকোরেটর</div>
-<div class="card"><i>0</i><b>💻</b>আইটি সেবা</div>
-<div class="card"><i>0</i><b>🌐</b>ওয়েব ডিজাইন</div>
-<div class="card"><i>0</i><b>📱</b>মোবাইল সার্ভিস</div>
+  <div class="card"><b>🏠</b>বাড়ি ভাড়া</div>
+  <div class="card"><b>🛺</b>সিএনজি<br><small>গ্যাসের সবুজ গাড়ি</small></div>
+  <div class="card"><b>🚕</b>অটো<br><small>ব্যাটারির টমটম</small></div>
+  <div class="card"><b>🏍️</b>বাইক</div>
+  <div class="card"><b>🚗</b>গাড়ি</div>
+  <div class="card"><b>🧑‍✈️</b>ড্রাইভার</div>
+  <div class="card"><b>🏪</b>দোকান</div>
+  <div class="card"><b>👷</b>কর্মী</div>
+  <div class="card"><b>🚚</b>পিকআপ</div>
+  <div class="card"><b>🚌</b>বাস</div>
+  <div class="card"><b>🚛</b>ট্রাক</div>
+  <div class="card"><b>📦</b>কুরিয়ার</div>
+  <div class="card"><b>📶</b>ওয়াইফাই কল</div>
+  <div class="card"><b>🚘</b>কার ড্রাইভিং শিখুন</div>
+  <div class="card"><b>🛵</b>বাইক ড্রাইভিং শিখুন</div>
+  <div class="card"><b>🚑</b>অ্যাম্বুলেন্স</div>
+  <div class="card"><b>🩺</b>ডাক্তার</div>
+  <div class="card"><b>👩‍⚕️</b>নার্স</div>
+  <div class="card"><b>💊</b>ফার্মেসি</div>
+  <div class="card"><b>🏥</b>হাসপাতাল</div>
+  <div class="card"><b>🩸</b>রক্তদাতা</div>
+  <div class="card"><b>🔬</b>ল্যাব</div>
+  <div class="card"><b>🐾</b>পশুর ডাক্তার</div>
+  <div class="card"><b>🕌</b>ইমাম</div>
+  <div class="card"><b>🕌</b>মুয়াজ্জিন</div>
+  <div class="card"><b>🎙️</b>বক্তা</div>
+  <div class="card"><b>🕌</b>খতিব</div>
+  <div class="card"><b>📜</b>মুফতি</div>
+  <div class="card"><b>📖</b>কারী</div>
+  <div class="card"><b>📗</b>হাফেজ</div>
+  <div class="card"><b>📚</b>নুরানী শিক্ষক</div>
+  <div class="card"><b>📖</b>কুরআন শিক্ষক</div>
+  <div class="card"><b>📖</b>কুরআন খতম</div>
+  <div class="card"><b>🕌</b>লজিং হুজুর</div>
+  <div class="card"><b>✈️</b>হজ্জ গাইড</div>
+  <div class="card"><b>💡</b>ইলেকট্রিশিয়ান</div>
+  <div class="card"><b>🚿</b>প্লাম্বার</div>
+  <div class="card"><b>🧱</b>রাজমিস্ত্রি</div>
+  <div class="card"><b>🎨</b>রং মিস্ত্রি</div>
+  <div class="card"><b>🪚</b>কাঠমিস্ত্রি</div>
+  <div class="card"><b>🔧</b>ওয়েল্ডার</div>
+  <div class="card"><b>⚙️</b>মেকানিক</div>
+  <div class="card"><b>🧹</b>কাজের বুয়া</div>
+  <div class="card"><b>💂</b>গার্ড</div>
+  <div class="card"><b>⛏️</b>মাটি কাটা / পুকুর খনন</div>
+  <div class="card"><b>✂️</b>দর্জি</div>
+  <div class="card"><b>💈</b>নাপিত</div>
+  <div class="card"><b>🍳</b>বাবুর্চি</div>
+  <div class="card"><b>👨‍🏫</b>শিক্ষক</div>
+  <div class="card"><b>📚</b>প্রাইভেট টিউটর</div>
+  <div class="card"><b>🏏</b>কোচ</div>
+  <div class="card"><b>⚖️</b>উকিল</div>
+  <div class="card"><b>📷</b>ফটোগ্রাফার</div>
+  <div class="card"><b>🎉</b>ডেকোরেটর</div>
+  <div class="card"><b>💻</b>আইটি সেবা</div>
+  <div class="card"><b>🌐</b>ওয়েব ডিজাইন</div>
+  <div class="card"><b>📱</b>মোবাইল সার্ভিস</div>
+  <div class="card"><b>🗺️</b>জমি বিক্রি</div>
+  <div class="card"><b>🌾</b>কৃষক</div>
+  <div class="card"><b>🐄</b>গরু</div>
+  <div class="card"><b>🐐</b>ছাগল</div>
+  <div class="card"><b>🦆</b>হাঁস</div>
+  <div class="card"><b>🐔</b>মুরগি</div>
+  <div class="card"><b>🐃</b>মহিষ</div>
+  <div class="card"><b>🕊️</b>কবুতর</div>
+  <div class="card"><b>🐟</b>মাছের পোনা</div>
+  <div class="card"><b>👨‍🌾</b>কৃষি শ্রমিক</div>
+  <div class="card"><b>🚜</b>ট্রাক্টর ভাড়া</div>
+  <div class="card"><b>🌾</b>ধান কাটা মেশিন</div>
+  <div class="card"><b>👨‍🏫</b>লজিং মাস্টার</div>
+  <div class="card"><b>➗</b>অংক টিচার</div>
+  <div class="card"><b>📝</b>বাংলা টিচার</div>
+  <div class="card"><b>🔤</b>ইংরেজি টিচার</div>
+  <div class="card"><b>📜</b>আরবি টিচার</div>
+  <div class="card"><b>🔬</b>বিজ্ঞান টিচার</div>
+  <div class="card"><b>💻</b>আইসিটি টিচার</div>
+  <div class="card"><b>🖥️</b>কম্পিউটার শিখুন</div>
+  <div class="card"><b>📋</b>চাকরির আবেদন</div>
+  <div class="card"><b>📄</b>সিভি বানানো</div>
+  <div class="card"><b>🛂</b>পাসপোর্ট / ভিসা</div>
+  <div class="card"><b>📜</b>জন্ম নিবন্ধন</div>
 </div>
 
-<h2>🏠 জমি ও বাড়ি</h2>
-<div class="grid">
-<div class="card"><i>0</i><b>🏠</b>বাড়ি ভাড়া</div>
-<div class="card"><i>0</i><b>🗺️</b>জমি বিক্রি</div>
-<div class="card"><i>0</i><b>🌾</b>কৃষক</div>
-<div class="card"><i>0</i><b>🛒</b>দোকানদার</div>
+<div class="section">
+  <h3>🔥 কেন এড হবেন?</h3>
+  <p>
+    ১. এখন ফ্রি - পরে ১৫০ টাকা লাগবে<br>
+    ২. আপনার এলাকার মানুষই আপনাকে কল দিবে<br>
+    ৩. প্রতিদিন নতুন কাস্টমার পাবেন<br>
+    ৪. জিমেইল দিয়ে ১ মিনিটে ফরম পূরণ
+  </p>
 </div>
 
-<h2>🐄 গরু-ছাগল ও কৃষি</h2>
-<div class="grid">
-<div class="card"><i>0</i><b>🐄</b>গরু</div>
-<div class="card"><i>0</i><b>🐐</b>ছাগল</div>
-<div class="card"><i>0</i><b>🦆</b>হাঁস</div>
-<div class="card"><i>0</i><b>🐔</b>মুরগি</div>
-<div class="card"><i>0</i><b>🐃</b>মহিষ</div>
-<div class="card"><i>0</i><b>🕊️</b>কবুতর</div>
-<div class="card"><i>0</i><b>🐟</b>মাছের পোনা</div>
-<div class="card"><i>0</i><b>👨‍🌾</b>কৃষি শ্রমিক</div>
-<div class="card"><i>0</i><b>🚜</b>ট্রাক্টর ভাড়া</div>
-<div class="card"><i>0</i><b>🌾</b>ধান কাটা মেশিন</div>
-</div>
+<a class="btn" href="https://wa.me/8801606582282?text=আমি%20সেবাদাতা%20হতে%20চাই">
+  📞 নাম্বার এড করুন
+</a>
 
-<h2>📚 টিচার ও পড়াশোনা</h2>
-<div class="grid">
-<div class="card"><i>0</i><b>👨‍🏫</b>লজিং মাস্টার</div>
-<div class="card"><i>0</i><b>➗</b>অংক টিচার</div>
-<div class="card"><i>0</i><b>📝</b>বাংলা টিচার</div>
-<div class="card"><i>0</i><b>🔤</b>ইংরেজি টিচার</div>
-<div class="card"><i>0</i><b>📜</b>আরবি টিচার</div>
-<div class="card"><i>0</i><b>🔬</b>বিজ্ঞান টিচার</div>
-<div class="card"><i>0</i><b>💻</b>আইসিটি টিচার</div>
-<div class="card"><i>0</i><b>🖥️</b>কম্পিউটার শিখুন</div>
-</div>
+<div class="footer">বাংলাদেশ সার্ভিস © ২০২৬ | চরখাই, সিলেট</div>
 
-<h2>📄 কাগজপত্র</h2>
-<div class="grid">
-<div class="card"><i>0</i><b>📋</b>চাকরির আবেদন</div>
-<div class="card"><i>0</i><b>📄</b>সিভি বানানো</div>
-<div class="card"><i>0</i><b>🛂</b>পাসপোর্ট / ভিসা</div>
-<div class="card"><i>0</i><b>📜</b>জন্ম নিবন্ধন</div>
-</div>
-
-<div class="bottom"><div class="active">🏠<br>হোম</div><div>❤️<br>সেইভ</div><div>➕<br>ফর্ম</div><div>👤<br>প্রোফাইল</div></div>
-
-<script>
-function f(){let v=document.getElementById('s').value.toLowerCase();document.querySelectorAll('.card').forEach(c=>{c.style.display=c.textContent.toLowerCase().includes(v)?'block':'none'})}
-</script>
 </body>
-  </html>
+    </html>
