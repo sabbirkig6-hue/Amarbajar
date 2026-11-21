@@ -3,21 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bangladesh Service - কাছের লোক, বিশ্বস্ত সেবা</title>
+<title>Bangladesh Service</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Hind Siliguri,Arial,sans-serif}
-body{background:#eef2ff;color:#111;padding-bottom:80px}
-.top{background:linear-gradient(90deg,#3b82f6,#0ea5e9);color:white;padding:14px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+body{background:#eef2ff;padding-bottom:80px}
+.top{background:linear-gradient(90deg,#3b82f6,#0ea5e9);color:white;padding:14px;display:flex;justify-content:space-between;align-items:center}
 .top b{font-size:19px}
-.top span{background:#f59e0b;color:white;border-radius:50%;padding:2px 7px;font-size:13px}
 .search{margin:12px;background:white;border-radius:30px;padding:12px 15px;display:flex;gap:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .search input{border:none;outline:none;width:100%;font-size:16px}
 .head{margin:0 12px;display:flex;justify-content:space-between;align-items:center}
 .head h3{font-size:18px}.head b{color:#2563eb;font-size:22px}
 .emg{display:flex;gap:10px;margin:12px}
-.emg a{flex:1;text-align:center;padding:12px;border-radius:12px;text-decoration:none;font-weight:bold;font-size:16px}
-.e1{border:2px solid #ef4444;color:#dc2626;background:#fff}
-.e2{border:2px solid #f59e0b;color:#d97706;background:#fff}
+.emg div{flex:1;text-align:center;padding:12px;border-radius:12px;font-weight:bold;font-size:16px;background:white}
+.e1{border:2px solid #ef4444;color:#dc2626}
+.e2{border:2px solid #f59e0b;color:#d97706}
 .loc{background:#dbeafe;margin:12px;padding:12px;border-radius:12px;text-align:center;color:#1d4ed8;font-weight:bold}
 .notice{margin:12px;background:white;border:2px solid #fca5a5;border-radius:15px;padding:14px}
 .notice2{margin:12px;background:white;border:2px solid #fbbf24;border-radius:15px;padding:14px}
@@ -25,140 +24,149 @@ body{background:#eef2ff;color:#111;padding-bottom:80px}
 .badge{background:#dc2626;color:white;font-size:13px;padding:3px 9px;border-radius:20px}
 .badge2{background:#f59e0b;color:white;font-size:13px;padding:3px 9px;border-radius:20px}
 .notice p,.notice2 p{color:#666;margin:8px 0;font-size:14px}
-.nbtn{display:block;text-align:center;background:#dc2626;color:white;padding:13px;border-radius:12px;text-decoration:none;font-weight:bold}
-.nbtn2{display:block;text-align:center;background:#f59e0b;color:white;padding:13px;border-radius:12px;text-decoration:none;font-weight:bold}
-h2{margin:15px 12px 5px;font-size:18px}
+h2{margin:18px 12px 5px;font-size:19px}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
-.card{background:white;border-radius:15px;padding:18px 8px;text-align:center;position:relative;text-decoration:none;color:#111;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.card{background:white;border-radius:15px;padding:18px 8px;text-align:center;position:relative;box-shadow:0 2px 8px rgba(0,0,0,.06)}
 .card b{display:block;font-size:28px;margin-bottom:6px}
 .card i{position:absolute;top:8px;right:8px;background:#2563eb;color:white;font-style:normal;font-size:12px;padding:2px 8px;border-radius:20px}
 .card small{font-size:12px;color:#666}
+.addbtn{display:block;background:#16a34a;color:white;text-align:center;margin:12px;padding:16px;border-radius:50px;text-decoration:none;font-size:20px;font-weight:bold}
 .bottom{position:fixed;bottom:0;left:0;right:0;background:white;display:flex;justify-content:space-around;padding:10px 0;border-top:1px solid #ddd}
-.bottom a{text-decoration:none;color:#666;text-align:center;font-size:14px}
-.bottom a.active{color:#2563eb;font-weight:bold}
-.callbtn{display:block;background:#16a34a;color:white;text-align:center;margin:12px;padding:16px;border-radius:50px;text-decoration:none;font-size:22px;font-weight:bold}
-.wabtn{display:block;background:#25D366;color:white;text-align:center;margin:12px;padding:16px;border-radius:50px;text-decoration:none;font-size:20px;font-weight:bold}
+.bottom div{text-align:center;font-size:14px;color:#666}
+.bottom div.active{color:#2563eb;font-weight:bold}
 </style>
 </head>
 <body>
 
-<div class="top"><b>🅱️ Bangladesh Service</b><div>🔔<span>1</span> &nbsp; 👤 S</div></div>
-
+<div class="top"><b>🅱️ Bangladesh Service</b><div>🔔 1 &nbsp; 👤 S</div></div>
 <div class="search">🔍 <input id="s" onkeyup="f()" placeholder="সেবা খুঁজুন - ড্রাইভার, ডাক্তার, ইমাম..."></div>
-
 <div class="head"><div><h3>Bangladesh Service</h3><small>কাছের লোক, বিশ্বস্ত সেবা</small></div><div style="text-align:right"><b>35 জন</b><br><small>সক্রিয়</small></div></div>
-
-<div class="emg"><a class="e1" href="tel:999">🚨 জরুরি - ৯৯৯</a><a class="e2" href="tel:102">🔥 ফায়ার - ১০২</a></div>
+<div class="emg"><div class="e1">🚨 জরুরি - ৯৯৯</div><div class="e2">🔥 ফায়ার - ১০২</div></div>
 <div class="loc">📍 আমার কাছের লোক দেখুন - লোকেশন ON করুন</div>
 
-<div class="notice"><h3>📢 টিকা নোটিশ <span class="badge">0 টা নোটিশ</span></h3><p>এখনো কোনো টিকা নোটিশ আসে নাই।</p><a class="nbtn" href="https://wa.me/8801606582282?text=টিকা%20নোটিশ%20দিতে%20চাই">🔒 টিকা টিম - নোটিশ দিন (পিন লাগবো)</a></div>
-<div class="notice2"><h3>🚨 হারানো / চুরি নোটিশ <span class="badge2">0 টা নোটিশ</span></h3><p>এখনো কোনো হারানো নোটিশ আসে নাই।</p><a class="nbtn2" href="https://wa.me/8801606582282?text=হারানো%20নোটিশ%20দিতে%20চাই">📢 হারানো নোটিশ দিন - কোনো পিন লাগবো না</a></div>
+<div class="notice"><h3>📢 টিকা নোটিশ <span class="badge">0 টা নোটিশ</span></h3><p>এখনো কোনো টিকা নোটিশ আসে নাই।</p></div>
+<div class="notice2"><h3>🚨 হারানো / চুরি নোটিশ <span class="badge2">0 টা নোটিশ</span></h3><p>এখনো কোনো হারানো নোটিশ আসে নাই।</p></div>
 
-<a class="callbtn" href="tel:+8801606582282">📞 কল করুন - 01606-582282</a>
-<a class="wabtn" href="https://wa.me/8801606582282?text=আমি%20সেবাদাতা%20হতে%20চাই">💬 WhatsApp এ নাম্বার এড করুন</a>
+<a class="addbtn" href="https://wa.me/8801606582282?text=আমি%20সেবাদাতা%20হতে%20চাই">➕ সেবাদাতা হিসাবে এড হন - ফ্রি</a>
 
 <h2>🚗 গাড়ি ও যাতায়াত</h2>
-<div class="grid" id="grid">
-<a class="card" href="https://wa.me/8801606582282?text=ড্রাইভার%20লাগবো"><i>0</i><b>🚗</b>ড্রাইভার</a>
-<a class="card" href="https://wa.me/8801606582282?text=অটো%20লাগবো"><i>3</i><b>🛺</b>অটো<small><br>ব্যাটারির টমটম</small></a>
-<a class="card" href="https://wa.me/8801606582282?text=সিএনজি%20লাগবো"><i>21</i><b>🚕</b>সিএনজি</a>
-<a class="card" href="https://wa.me/8801606582282?text=পিকআপ%20লাগবো"><i>1</i><b>🚚</b>পিকআপ</a>
-<a class="card" href="https://wa.me/8801606582282?text=বাস%20লাগবো"><i>0</i><b>🚌</b>বাস</a>
-<a class="card" href="https://wa.me/8801606582282?text=ট্রাক%20লাগবো"><i>0</i><b>🚛</b>ট্রাক</a>
-<a class="card" href="https://wa.me/8801606582282?text=বাইক%20লাগবো"><i>0</i><b>🏍️</b>বাইক</a>
-<a class="card" href="https://wa.me/8801606582282?text=ওয়াইফাই%20কল"><i>0</i><b>📶</b>ওয়াইফাই কল</a>
-<a class="card" href="https://wa.me/8801606582282?text=গাড়ি%20ভাড়া"><i>0</i><b>🚙</b>গাড়ি ভাড়া</a>
-<a class="card" href="https://wa.me/8801606582282?text=কুরিয়ার"><i>0</i><b>📦</b>কুরিয়ার</a>
-<a class="card" href="https://wa.me/8801606582282?text=কার%20ড্রাইভিং%20শিখবো"><i>0</i><b>🚘</b>কার ড্রাইভিং শিখুন</a>
-<a class="card" href="https://wa.me/8801606582282?text=বাইক%20ড্রাইভিং%20শিখবো"><i>0</i><b>🛵</b>বাইক ড্রাইভিং শিখুন</a>
-
-<h2 style="grid-column:1/3">🩺 স্বাস্থ্য</h2>
-<a class="card" href="https://wa.me/8801606582282?text=অ্যাম্বুলেন্স"><i>0</i><b>🚑</b>অ্যাম্বুলেন্স</a>
-<a class="card" href="https://wa.me/8801606582282?text=ডাক্তার"><i>0</i><b>🩺</b>ডাক্তার</a>
-<a class="card" href="https://wa.me/8801606582282?text=নার্স"><i>0</i><b>👩‍⚕️</b>নার্স</a>
-<a class="card" href="https://wa.me/8801606582282?text=ফার্মেসি"><i>3</i><b>💊</b>ফার্মেসি</a>
-<a class="card" href="https://wa.me/8801606582282?text=হাসপাতাল"><i>0</i><b>🏥</b>হাসপাতাল</a>
-<a class="card" href="https://wa.me/8801606582282?text=রক্তদাতা"><i>0</i><b>🩸</b>রক্তদাতা</a>
-<a class="card" href="https://wa.me/8801606582282?text=ল্যাব"><i>0</i><b>🔬</b>ল্যাব</a>
-<a class="card" href="https://wa.me/8801606582282?text=পশুর%20ডাক্তার"><i>0</i><b>🐾</b>পশুর ডাক্তার</a>
-
-<h2 style="grid-column:1/3">🕌 ধর্মীয় সেবা</h2>
-<a class="card" href="https://wa.me/8801606582282?text=ইমাম"><i>0</i><b>🕌</b>ইমাম</a>
-<a class="card" href="https://wa.me/8801606582282?text=মুয়াজ্জিন"><i>0</i><b>🕌</b>মুয়াজ্জিন</a>
-<a class="card" href="https://wa.me/8801606582282?text=বক্তা"><i>0</i><b>🎙️</b>বক্তা</a>
-<a class="card" href="https://wa.me/8801606582282?text=খতিব"><i>0</i><b>🕌</b>খতিব</a>
-<a class="card" href="https://wa.me/8801606582282?text=মুফতি"><i>0</i><b>📜</b>মুফতি</a>
-<a class="card" href="https://wa.me/8801606582282?text=কারী"><i>0</i><b>📖</b>কারী</a>
-<a class="card" href="https://wa.me/8801606582282?text=হাফেজ"><i>0</i><b>📗</b>হাফেজ</a>
-<a class="card" href="https://wa.me/8801606582282?text=নুরানী%20শিক্ষক"><i>0</i><b>📚</b>নুরানী শিক্ষক</a>
-<a class="card" href="https://wa.me/8801606582282?text=কুরআন%20শিক্ষক"><i>0</i><b>📖</b>কুরআন শিক্ষক</a>
-<a class="card" href="https://wa.me/8801606582282?text=কুরআন%20খতম"><i>0</i><b>📖</b>কুরআন খতম</a>
-<a class="card" href="https://wa.me/8801606582282?text=লজিং%20হুজুর"><i>0</i><b>🕌</b>লজিং হুজুর</a>
-<a class="card" href="https://wa.me/8801606582282?text=হজ্জ%20গাইড"><i>0</i><b>✈️</b>হজ্জ গাইড</a>
-
-<h2 style="grid-column:1/3">🔧 মিস্ত্রি ও কর্মী</h2>
-<a class="card" href="https://wa.me/8801606582282?text=ইলেকট্রিশিয়ান"><i>1</i><b>💡</b>ইলেকট্রিশিয়ান</a>
-<a class="card" href="https://wa.me/8801606582282?text=প্লাম্বার"><i>1</i><b>🚿</b>প্লাম্বার</a>
-<a class="card" href="https://wa.me/8801606582282?text=রাজমিস্ত্রি"><i>1</i><b>🧱</b>রাজমিস্ত্রি</a>
-<a class="card" href="https://wa.me/8801606582282?text=রং%20মিস্ত্রি"><i>1</i><b>🎨</b>রং মিস্ত্রি</a>
-<a class="card" href="https://wa.me/8801606582282?text=কাঠমিস্ত্রি"><i>1</i><b>🪚</b>কাঠমিস্ত্রি</a>
-<a class="card" href="https://wa.me/8801606582282?text=ওয়েল্ডার"><i>0</i><b>🔧</b>ওয়েল্ডার</a>
-<a class="card" href="https://wa.me/8801606582282?text=মেকানিক"><i>0</i><b>⚙️</b>মেকানিক</a>
-<a class="card" href="https://wa.me/8801606582282?text=কর্মী"><i>0</i><b>👷</b>কর্মী / শ্রমিক</a>
-<a class="card" href="https://wa.me/8801606582282?text=কাজের%20বুয়া"><i>0</i><b>🧹</b>কাজের বুয়া</a>
-<a class="card" href="https://wa.me/8801606582282?text=গার্ড"><i>0</i><b>💂</b>গার্ড</a>
-<a class="card" href="https://wa.me/8801606582282?text=মাটি%20কাটা"><i>0</i><b>⛏️</b>মাটি কাটা / পুকুর খনন</a>
-
-<h2 style="grid-column:1/3">✂️ অন্যান্য সেবা</h2>
-<a class="card" href="https://wa.me/8801606582282?text=দর্জি"><i>0</i><b>✂️</b>দর্জি</a>
-<a class="card" href="https://wa.me/8801606582282?text=নাপিত"><i>0</i><b>💈</b>নাপিত</a>
-<a class="card" href="https://wa.me/8801606582282?text=বাবুর্চি"><i>0</i><b>🍳</b>বাবুর্চি</a>
-<a class="card" href="https://wa.me/8801606582282?text=শিক্ষক"><i>0</i><b>👨‍🏫</b>শিক্ষক</a>
-<a class="card" href="https://wa.me/8801606582282?text=প্রাইভেট%20টিউটর"><i>0</i><b>📚</b>প্রাইভেট টিউটর</a>
-<a class="card" href="https://wa.me/8801606582282?text=কোচ"><i>0</i><b>🏏</b>কোচ</a>
-<a class="card" href="https://wa.me/8801606582282?text=উকিল"><i>0</i><b>⚖️</b>উকিল</a>
-<a class="card" href="https://wa.me/8801606582282?text=ফটোগ্রাফার"><i>0</i><b>📷</b>ফটোগ্রাফার</a>
-<a class="card" href="https://wa.me/8801606582282?text=ডেকোরেটর"><i>0</i><b>🎉</b>ডেকোরেটর</a>
-<a class="card" href="https://wa.me/8801606582282?text=আইটি%20সেবা"><i>0</i><b>💻</b>আইটি সেবা</a>
-<a class="card" href="https://wa.me/8801606582282?text=ওয়েব%20ডিজাইন"><i>0</i><b>🌐</b>ওয়েব ডিজাইন</a>
-<a class="card" href="https://wa.me/8801606582282?text=মোবাইল%20সার্ভিস"><i>0</i><b>📱</b>মোবাইল সার্ভিস</a>
-
-<h2 style="grid-column:1/3">🏠 জমি ও বাড়ি</h2>
-<a class="card" href="https://wa.me/8801606582282?text=বাড়ি%20ভাড়া"><i>0</i><b>🏠</b>বাড়ি ভাড়া</a>
-<a class="card" href="https://wa.me/8801606582282?text=জমি%20বিক্রি"><i>0</i><b>🗺️</b>জমি বিক্রি</a>
-<a class="card" href="https://wa.me/8801606582282?text=কৃষক"><i>0</i><b>🌾</b>কৃষক</a>
-<a class="card" href="https://wa.me/8801606582282?text=দোকানদার"><i>0</i><b>🛒</b>দোকানদার</a>
-
-<h2 style="grid-column:1/3">🐄 গরু-ছাগল ও কৃষি</h2>
-<a class="card" href="https://wa.me/8801606582282?text=গরু"><i>0</i><b>🐄</b>গরু</a>
-<a class="card" href="https://wa.me/8801606582282?text=ছাগল"><i>0</i><b>🐐</b>ছাগল</a>
-<a class="card" href="https://wa.me/8801606582282?text=হাঁস"><i>0</i><b>🦆</b>হাঁস</a>
-<a class="card" href="https://wa.me/8801606582282?text=মুরগি"><i>0</i><b>🐔</b>মুরগি</a>
-<a class="card" href="https://wa.me/8801606582282?text=মহিষ"><i>0</i><b>🐃</b>মহিষ</a>
-<a class="card" href="https://wa.me/8801606582282?text=কবুতর"><i>0</i><b>🕊️</b>কবুতর</a>
-<a class="card" href="https://wa.me/8801606582282?text=মাছের%20পোনা"><i>0</i><b>🐟</b>মাছের পোনা</a>
-<a class="card" href="https://wa.me/8801606582282?text=কৃষি%20শ্রমিক"><i>0</i><b>👨‍🌾</b>কৃষি শ্রমিক</a>
-<a class="card" href="https://wa.me/8801606582282?text=ট্রাক্টর%20ভাড়া"><i>0</i><b>🚜</b>ট্রাক্টর ভাড়া</a>
-<a class="card" href="https://wa.me/8801606582282?text=ধান%20কাটা%20মেশিন"><i>0</i><b>🌾</b>ধান কাটা মেশিন</a>
-
-<h2 style="grid-column:1/3">📚 টিচার ও পড়াশোনা</h2>
-<a class="card" href="https://wa.me/8801606582282?text=লজিং%20মাস্টার"><i>0</i><b>👨‍🏫</b>লজিং মাস্টার</a>
-<a class="card" href="https://wa.me/8801606582282?text=অংক%20টিচার"><i>0</i><b>➗</b>অংক টিচার</a>
-<a class="card" href="https://wa.me/8801606582282?text=বাংলা%20টিচার"><i>0</i><b>📝</b>বাংলা টিচার</a>
-<a class="card" href="https://wa.me/8801606582282?text=ইংরেজি%20টিচার"><i>0</i><b>🔤</b>ইংরেজি টিচার</a>
-<a class="card" href="https://wa.me/8801606582282?text=আরবি%20টিচার"><i>0</i><b>📜</b>আরবি টিচার</a>
-<a class="card" href="https://wa.me/8801606582282?text=বিজ্ঞান%20টিচার"><i>0</i><b>🔬</b>বিজ্ঞান টিচার</a>
-<a class="card" href="https://wa.me/8801606582282?text=আইসিটি%20টিচার"><i>0</i><b>💻</b>আইসিটি টিচার</a>
-<a class="card" href="https://wa.me/8801606582282?text=কম্পিউটার%20শিখুন"><i>0</i><b>🖥️</b>কম্পিউটার শিখুন</a>
-
-<h2 style="grid-column:1/3">📄 কাগজপত্র</h2>
-<a class="card" href="https://wa.me/8801606582282?text=চাকরির%20আবেদন"><i>0</i><b>📋</b>চাকরির আবেদন</a>
-<a class="card" href="https://wa.me/8801606582282?text=সিভি%20বানানো"><i>0</i><b>📄</b>সিভি বানানো</a>
-<a class="card" href="https://wa.me/8801606582282?text=পাসপোর্ট"><i>0</i><b>🛂</b>পাসপোর্ট / ভিসা</a>
-<a class="card" href="https://wa.me/8801606582282?text=জন্ম%20নিবন্ধন"><i>0</i><b>📜</b>জন্ম নিবন্ধন</a>
+<div class="grid">
+<div class="card"><i>0</i><b>🚗</b>ড্রাইভার</div>
+<div class="card"><i>3</i><b>🛺</b>অটো<br><small>ব্যাটারির টমটম</small></div>
+<div class="card"><i>21</i><b>🚕</b>সিএনজি</div>
+<div class="card"><i>1</i><b>🚚</b>পিকআপ</div>
+<div class="card"><i>0</i><b>🚌</b>বাস</div>
+<div class="card"><i>0</i><b>🚛</b>ট্রাক</div>
+<div class="card"><i>0</i><b>🏍️</b>বাইক</div>
+<div class="card"><i>0</i><b>📶</b>ওয়াইফাই কল</div>
+<div class="card"><i>0</i><b>🚙</b>গাড়ি ভাড়া</div>
+<div class="card"><i>0</i><b>📦</b>কুরিয়ার</div>
+<div class="card"><i>0</i><b>🚘</b>কার ড্রাইভিং শিখুন</div>
+<div class="card"><i>0</i><b>🛵</b>বাইক ড্রাইভিং শিখুন</div>
 </div>
 
-<div class="bottom"><a class="active" href="#">🏠<br>হোম</a><a href="#">❤️<br>সেইভ</a><a href="#">➕<br>ফর্ম</a><a href="#">👤<br>প্রোফাইল</a></div>
+<h2>🩺 স্বাস্থ্য</h2>
+<div class="grid">
+<div class="card"><i>0</i><b>🚑</b>অ্যাম্বুলেন্স</div>
+<div class="card"><i>0</i><b>🩺</b>ডাক্তার</div>
+<div class="card"><i>0</i><b>👩‍⚕️</b>নার্স</div>
+<div class="card"><i>3</i><b>💊</b>ফার্মেসি</div>
+<div class="card"><i>0</i><b>🏥</b>হাসপাতাল</div>
+<div class="card"><i>0</i><b>🩸</b>রক্তদাতা</div>
+<div class="card"><i>0</i><b>🔬</b>ল্যাব</div>
+<div class="card"><i>0</i><b>🐾</b>পশুর ডাক্তার</div>
+</div>
+
+<h2>🕌 ধর্মীয় সেবা</h2>
+<div class="grid">
+<div class="card"><i>0</i><b>🕌</b>ইমাম</div>
+<div class="card"><i>0</i><b>🕌</b>মুয়াজ্জিন</div>
+<div class="card"><i>0</i><b>🎙️</b>বক্তা</div>
+<div class="card"><i>0</i><b>🕌</b>খতিব</div>
+<div class="card"><i>0</i><b>📜</b>মুফতি</div>
+<div class="card"><i>0</i><b>📖</b>কারী</div>
+<div class="card"><i>0</i><b>📗</b>হাফেজ</div>
+<div class="card"><i>0</i><b>📚</b>নুরানী শিক্ষক</div>
+<div class="card"><i>0</i><b>📖</b>কুরআন শিক্ষক</div>
+<div class="card"><i>0</i><b>📖</b>কুরআন খতম</div>
+<div class="card"><i>0</i><b>🕌</b>লজিং হুজুর</div>
+<div class="card"><i>0</i><b>✈️</b>হজ্জ গাইড</div>
+</div>
+
+<h2>🔧 মিস্ত্রি ও কর্মী</h2>
+<div class="grid">
+<div class="card"><i>1</i><b>💡</b>ইলেকট্রিশিয়ান</div>
+<div class="card"><i>1</i><b>🚿</b>প্লাম্বার</div>
+<div class="card"><i>1</i><b>🧱</b>রাজমিস্ত্রি</div>
+<div class="card"><i>1</i><b>🎨</b>রং মিস্ত্রি</div>
+<div class="card"><i>1</i><b>🪚</b>কাঠমিস্ত্রি</div>
+<div class="card"><i>0</i><b>🔧</b>ওয়েল্ডার</div>
+<div class="card"><i>0</i><b>⚙️</b>মেকানিক</div>
+<div class="card"><i>0</i><b>👷</b>কর্মী / শ্রমিক</div>
+<div class="card"><i>0</i><b>🧹</b>কাজের বুয়া</div>
+<div class="card"><i>0</i><b>💂</b>গার্ড</div>
+<div class="card"><i>0</i><b>⛏️</b>মাটি কাটা / পুকুর খনন</div>
+</div>
+
+<h2>✂️ অন্যান্য সেবা</h2>
+<div class="grid">
+<div class="card"><i>0</i><b>✂️</b>দর্জি</div>
+<div class="card"><i>0</i><b>💈</b>নাপিত</div>
+<div class="card"><i>0</i><b>🍳</b>বাবুর্চি</div>
+<div class="card"><i>0</i><b>👨‍🏫</b>শিক্ষক</div>
+<div class="card"><i>0</i><b>📚</b>প্রাইভেট টিউটর</div>
+<div class="card"><i>0</i><b>🏏</b>কোচ</div>
+<div class="card"><i>0</i><b>⚖️</b>উকিল</div>
+<div class="card"><i>0</i><b>📷</b>ফটোগ্রাফার</div>
+<div class="card"><i>0</i><b>🎉</b>ডেকোরেটর</div>
+<div class="card"><i>0</i><b>💻</b>আইটি সেবা</div>
+<div class="card"><i>0</i><b>🌐</b>ওয়েব ডিজাইন</div>
+<div class="card"><i>0</i><b>📱</b>মোবাইল সার্ভিস</div>
+</div>
+
+<h2>🏠 জমি ও বাড়ি</h2>
+<div class="grid">
+<div class="card"><i>0</i><b>🏠</b>বাড়ি ভাড়া</div>
+<div class="card"><i>0</i><b>🗺️</b>জমি বিক্রি</div>
+<div class="card"><i>0</i><b>🌾</b>কৃষক</div>
+<div class="card"><i>0</i><b>🛒</b>দোকানদার</div>
+</div>
+
+<h2>🐄 গরু-ছাগল ও কৃষি</h2>
+<div class="grid">
+<div class="card"><i>0</i><b>🐄</b>গরু</div>
+<div class="card"><i>0</i><b>🐐</b>ছাগল</div>
+<div class="card"><i>0</i><b>🦆</b>হাঁস</div>
+<div class="card"><i>0</i><b>🐔</b>মুরগি</div>
+<div class="card"><i>0</i><b>🐃</b>মহিষ</div>
+<div class="card"><i>0</i><b>🕊️</b>কবুতর</div>
+<div class="card"><i>0</i><b>🐟</b>মাছের পোনা</div>
+<div class="card"><i>0</i><b>👨‍🌾</b>কৃষি শ্রমিক</div>
+<div class="card"><i>0</i><b>🚜</b>ট্রাক্টর ভাড়া</div>
+<div class="card"><i>0</i><b>🌾</b>ধান কাটা মেশিন</div>
+</div>
+
+<h2>📚 টিচার ও পড়াশোনা</h2>
+<div class="grid">
+<div class="card"><i>0</i><b>👨‍🏫</b>লজিং মাস্টার</div>
+<div class="card"><i>0</i><b>➗</b>অংক টিচার</div>
+<div class="card"><i>0</i><b>📝</b>বাংলা টিচার</div>
+<div class="card"><i>0</i><b>🔤</b>ইংরেজি টিচার</div>
+<div class="card"><i>0</i><b>📜</b>আরবি টিচার</div>
+<div class="card"><i>0</i><b>🔬</b>বিজ্ঞান টিচার</div>
+<div class="card"><i>0</i><b>💻</b>আইসিটি টিচার</div>
+<div class="card"><i>0</i><b>🖥️</b>কম্পিউটার শিখুন</div>
+</div>
+
+<h2>📄 কাগজপত্র</h2>
+<div class="grid">
+<div class="card"><i>0</i><b>📋</b>চাকরির আবেদন</div>
+<div class="card"><i>0</i><b>📄</b>সিভি বানানো</div>
+<div class="card"><i>0</i><b>🛂</b>পাসপোর্ট / ভিসা</div>
+<div class="card"><i>0</i><b>📜</b>জন্ম নিবন্ধন</div>
+</div>
+
+<div class="bottom"><div class="active">🏠<br>হোম</div><div>❤️<br>সেইভ</div><div>➕<br>ফর্ম</div><div>👤<br>প্রোফাইল</div></div>
 
 <script>
 function f(){let v=document.getElementById('s').value.toLowerCase();document.querySelectorAll('.card').forEach(c=>{c.style.display=c.textContent.toLowerCase().includes(v)?'block':'none'})}
